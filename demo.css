@@ -1,0 +1,128 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+#J_stage {
+	display: -webkit-box;
+	overflow: hidden;
+}
+
+#J_stage .view {
+	-webkit-box-flex: 1;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+#J_clock,
+#J_event {
+	display: none;
+}
+
+#J_head {
+	display: box;
+	display: -webkit-box;
+	padding: 0 10px;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	font: 17px/30px -apple-system-font;
+	color: #fff;
+	position: fixed;
+	background: -webkit-linear-gradient(0deg, #e5467f, rgba(229, 70, 127, 0.91) 80%, #e5467f);
+}
+
+#J_head .left {
+	width: 50px;
+	text-align: left;
+}
+
+#J_head .right {
+	width: 50px;
+	text-align: right;
+}
+
+#J_head .mid {
+	box-flex: 1;
+	-webkit-box-flex: 1;
+	font-weight: bold;
+	text-align: center;
+}
+
+#J_content {
+	background-color: #fee16f;
+	padding: 20px 40px;
+	padding-top: 50px;
+	color: #000;
+	text-align: center;
+}
+
+#J_content .timer {
+	font: 72px/72px -apple-system-font;
+	font-weight: 100;
+}
+
+#J_content .timer span {
+	font-size: 70px;
+	line-height: 70px;
+	vertical-align: top;
+	font-family: AvenirNextCondensed-UltraLight;
+}
+
+#J_content .event {
+	font: 17px/30px -apple-system-font;
+		
+}
+
+#J_list {
+	padding-left: 10px;
+	margin: 0;
+	font: 21px/50px -apple-system-font;
+	color: #000;
+}
+
+#J_list li {
+	list-style: none;
+	background: repeat-x bottom left
+	  url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'><rect fill='#bebdb9' x='0' y='0' width='1' height='0.5'/></svg>");
+}
+
+#J_mask {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: none;
+	top: 0px;
+	left: 0px;
+	background-color: #fff;
+	opacity: 0.1;
+}
+
+#J_toast {
+	height: 30px;
+	width: 300px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	font: 17px/30px -apple-system-font;
+	color: #000;
+	text-align: center;
+	display: none;
+}
+
+#J_toast .content {
+	color: #f349a5;	
+}
+
+.blur {
+	-webkit-transition: -webkit-filter 100ms ease-out;
+	-webkit-filter: blur(15px);
+}
+
+.unblur {
+	-webkit-transition: -webkit-filter 100ms ease-in;
+	-webkit-filter: blur(0);
+}
